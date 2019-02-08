@@ -71,6 +71,19 @@
 	.current-menu-ancestor > a {
 
 	}
+
+	& .sub-menu {
+		background-color: #333;
+
+		& .menu-item {
+			transition: all .3s;
+		}
+
+		& .menu-item:hover {
+			background: rgba(255, 255, 255, 0.2);
+			color: #000;
+		}
+	}
 }
 
 /* Small menu. */
