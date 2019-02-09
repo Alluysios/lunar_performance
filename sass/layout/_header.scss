@@ -7,11 +7,47 @@
     top: 0;
     left: 0;
     padding: 15px 0;
-    background: rgba($color: #000000, $alpha: 0.5);
+    background: #D7342F;
+
+    &__title a,
+    &__description a {
+        text-decoration: none;
+    }
+
+    &__title a {
+        font-size: 4rem;
+        color: #d7342f;
+    }
+
+    &__description a {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 100%;
+        padding: 10rem 0 10rem 5rem;
+        @include transform(translate(-10%, -50%));
+        text-decoration: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60%;
+            height: 100%;
+            z-index: -1;
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.4);
+        }
+    }
 }
 
 .custom__header {
-
 
     &-img {
         width: 100%;

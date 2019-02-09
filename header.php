@@ -23,21 +23,27 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" class="custom__header-img"/>
+	<div class="header__content">
+	<?php 
+		if ( is_front_page() && is_home() ) :
+			?>
+			<h1 class="header__title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="header__description site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></h1>
+			<?php
+		else :
+			?>
+			<h1 class="header__title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="header__description site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></h2>
+			<?php
+		endif;
+		$lunar_performance_description = get_bloginfo( 'description', 'display' );
+		if ( $lunar_performance_description || is_customize_preview() ) :
+	?>
+	</div>
 	<header id="masthead" class="header site-header">
 		<div class="header__branding site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="header__title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="header__title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$lunar_performance_description = get_bloginfo( 'description', 'display' );
-			if ( $lunar_performance_description || is_customize_preview() ) :
 				?>
 
 			<?php endif; ?>
