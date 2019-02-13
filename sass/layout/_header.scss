@@ -15,12 +15,12 @@
     }
 
     &__title a {
-        font-size: 4rem;
+        font-size: 2rem;
         color: #d7342f;
     }
 
     &__description a {
-        font-size: 3rem;
+        font-size: 1.3rem;
         text-transform: uppercase;
     }
 
@@ -33,17 +33,20 @@
         @include transform(translate(-10%, -50%));
         text-decoration: none;
 
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 60%;
-            height: 100%;
-            z-index: -1;
-            padding: 20px 0;
-            background: rgba(255, 255, 255, 0.4);
+        @media (min-width: 992px) {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 60%;
+                height: 100%;
+                z-index: -1;
+                padding: 20px 0;
+                background: rgba(255, 255, 255, 0.4);
+            }
         }
+        
     }
 }
 
