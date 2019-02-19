@@ -15,7 +15,7 @@
     }
 
     &__title a {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #d7342f;
     }
 
@@ -25,15 +25,21 @@
     }
 
     &__content {
+        text-align: center;
         position: absolute;
         top: 50%;
-        left: 10%;
+        left: 50%;
         width: 100%;
-        padding: 10rem 0 10rem 5rem;
-        @include transform(translate(-10%, -50%));
+        @include transform(translate(-50%, -50%));
         text-decoration: none;
 
         @media (min-width: 992px) {
+            &__content {
+                padding: 10rem 0 10rem 5rem;
+                left: 10%;
+                @include transform(translate(-10%, -50%));
+            }
+
             &::before {
                 content: "";
                 position: absolute;
@@ -53,6 +59,7 @@
 .custom__header {
     &-img {
         width: 100%;
-        height: 100vh;
+        height: auto;
+        padding: 84.7px;
     }
 }
