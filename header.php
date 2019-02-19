@@ -41,22 +41,23 @@
 	?>
 	</div>
 	<header id="masthead" class="header site-header">
-		<div class="header__branding site-branding">
-			<?php
-			the_custom_logo();
-				?>
-
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="navigation main-navigation">
+			<div class="header__branding site-branding">
+				<?php
+				the_custom_logo();
+				?>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
 			<button class="navigation__button menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i><?php esc_html_e( '', 'lunar_performance' ); ?></button>
 			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+					'menu_class'	 => 'navigation__items',
+				) );
 			?>
 		</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->
-
+	
 	<div id="content" class="site-content">

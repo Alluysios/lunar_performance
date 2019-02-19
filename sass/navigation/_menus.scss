@@ -89,10 +89,31 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
-
+	display: flex;
 }
 
+
+.navigation {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	width: 100%;
+	
+	&__button {
+		align-self: center;
+		margin-left: auto;
+	}
+
+	.menu-menu-1-container {
+		flex: 1 0 100%;
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
@@ -101,6 +122,24 @@
 	.main-navigation ul {
 		display: block;
 	}
+
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.menu-menu-1-container {
+			flex: none !important;
+		}
+
+		&__items {
+			flex-direction: row;
+		}
+	}
+
+	
+	
 }
 
 .comment-navigation,
