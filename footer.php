@@ -8,13 +8,11 @@
  *
  * @package lunar_performance
  */
-
 ?>
-
 	</div><!-- #content -->
 
-	<footer id="colophon" class="footer site-footer">
-		<div class="footer_info site-info">
+	<footer id="colophon" class="footer">
+		<div class="footer__info">
 			<h3 class="heading-tertiary">Social Media.</h3>
 			<div class="footer__sm">
 				<i class="fab fa-twitter"></i>
@@ -30,8 +28,8 @@
 
 		<div class="footer__contact">
 			<h3 class="heading-tertiary">Contact</h3>
-			<p class="footer__phone-info">Phone: 587-999-9999</p>
-			<p class="footer__email-info">Email: lunarperformance@gmail.com</p>
+			<p class="footer__contact-phone">Phone: 587-999-9999</p>
+			<p class="footer__contact-email">Email: lunarperformance@gmail.com</p>
 		</div><!-- .contact -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

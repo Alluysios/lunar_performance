@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    background: #333;
+    color: #fff !important;
+    flex-direction: column;
+    padding-left: 18px;
+
+    &__info {
+        padding-bottom: 1.5rem;
+        order: 2;
+    }
+
+    &__sm {
+        font-size: 1.5rem;
+    }
+
+    &__contact {
+        line-height: 1;
+    }
+
+    
+    &__link {
+        color: #fff;
+        text-decoration: none;
+    }
+}
