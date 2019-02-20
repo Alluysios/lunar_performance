@@ -34,23 +34,23 @@
         text-decoration: none;
 
         @media (min-width: 992px) {
-            &__content {
+            & {
                 padding: 10rem 0 10rem 5rem;
                 left: 10%;
                 @include transform(translate(-10%, -50%));
             }
 
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 60%;
-                height: 100%;
-                z-index: -1;
-                padding: 20px 0;
-                background: rgba(255, 255, 255, 0.4);
-            }
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     left: 0;
+            //     top: 0;
+            //     width: 60%;
+            //     height: 100%;
+            //     z-index: -1;
+            //     padding: 20px 0;
+            //     background: rgba(255, 255, 255, 0.4);
+            // }
         }
         
     }

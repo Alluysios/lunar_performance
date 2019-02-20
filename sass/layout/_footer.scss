@@ -1,9 +1,28 @@
+
 .footer {
     display: flex;
     background: #333;
     color: #fff !important;
     flex-direction: column;
-    padding-left: 18px;
+    padding: 30px;
+
+    @media (min-width: 768px) {
+        & {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        &__contact {
+            order: 2;
+            flex-basis: 40%;
+        }
+
+        &__info {
+            order: 1;
+            text-align: center;
+            flex-basis: 40%;     
+        }
+    }
 
     &__info {
         padding-bottom: 1.5rem;
@@ -24,3 +43,4 @@
         text-decoration: none;
     }
 }
+
