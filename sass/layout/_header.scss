@@ -16,16 +16,24 @@
 
     &__title a {
         font-size: 1.8rem;
-        color: #d7342f;
+        color: #fff;
+
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
     }
 
     &__description a {
         font-size: 1.3rem;
+        color: #fff !important;
         text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+        }
     }
 
     &__content {
-        text-align: center;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -33,12 +41,13 @@
         @include transform(translate(-50%, -50%));
         text-decoration: none;
 
+        @media (min-width: 768px) {
+            text-align: center;
+        }
+
         @media (min-width: 992px) {
-            & {
-                padding: 10rem 0 10rem 5rem;
-                left: 10%;
-                @include transform(translate(-10%, -50%));
-            }
+            text-align: left;
+            padding-left: 10rem;
 
             // &::before {
             //     content: "";
@@ -59,7 +68,17 @@
 .custom__header {
     &-img {
         width: 100%;
-        height: 100vh;
+        height: auto;
         padding-top: 116.5px;
+
+        @media (min-width: 992px) {
+            height: 100vh;
+        }
     }
+}
+
+.entry-title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
 }
