@@ -22,7 +22,10 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" class="custom__header-img"/>
+<?php 
+echo do_shortcode('[smartslider3 slider=2]');
+?>
+	
 	<div class="header__content">
 	<?php 
 		if ( is_front_page() && is_home() ) :
