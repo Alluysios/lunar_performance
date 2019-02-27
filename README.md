@@ -9,3 +9,8 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+
+inspirational:
+https://www.startupactive.com/
+https://www.equinox.com/personaltraining?icmp=topnav-personaltraining
+https://www.fithaus.io/
