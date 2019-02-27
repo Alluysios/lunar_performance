@@ -73,15 +73,15 @@
 	}
 
 	& .sub-menu {
-		background-color: #333;
+		background-color: #fff;
 
 		& .menu-item {
 			transition: all .3s;
 		}
 
 		& .menu-item:hover {
-			background: rgba(255, 255, 255, 0.2);
-			color: #000;
+			background: rgba(0, 0, 0, 0.2);
+			color: #333;
 		}
 	}
 }
@@ -90,6 +90,11 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 800px) {
+		flex-direction: row;
+	}
 }
 
 
@@ -112,14 +117,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		@media screen and (min-width: 600px) {
-			font-size: .6rem;
-		}
 	}
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 50em) { // 50em = 800px
 	.menu-toggle {
 		display: none;
 	}
