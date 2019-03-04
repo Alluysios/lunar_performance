@@ -1,7 +1,7 @@
 
 .footer {
     display: flex;
-    background: #333;
+    background-image: linear-gradient(-45deg, #000080 50%, #333 50%);
     color: #fff !important;
     flex-direction: column;
     padding: 80px 0;
@@ -10,12 +10,12 @@
         & {
             flex-direction: row;
             justify-content: space-evenly;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
 
         &__contact {
             order: 2;
-            flex-basis: 40%;
+            flex-basis: 35%;
         }
 
         &__info {
