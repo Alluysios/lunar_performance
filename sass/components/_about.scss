@@ -1,6 +1,14 @@
-.aboutimmg {
+.aboutimgg {
 	display: flex;
     flex-direction: column;
+
+    @media only screen and (min-width: 580px) {
+  
+     	flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 1000px;
+        margin: 0 auto;
+  }
 
     &__child {
         flex: 1;
@@ -18,13 +26,7 @@
 	}
 
 }
-   @media only screen and (min-width: 580px) {
-  
-     	flex-wrap: wrap;
-        flex-direction: row;
-        max-width: 1000px;
-        margin: 0 auto;
-  }
+   
   
   	&__btn{
 		display: block;
@@ -50,4 +52,36 @@
 		text-align: center;
 }
 
+}
+
+//////////
+
+.about__img {
+  
+    padding: 5px;
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+
+///// view page////
+
+
+.view__img{
+	  padding: 5px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.view__btn{
+	display: block;
+  	width: 50%;
+		margin:auto;
+    text-decoration: none;
+    padding: 10px 12px;
+    background: #b4b9be;
+	  font-size: 16px;
+  	cursor: pointer;
+  	text-align: center;
 }
