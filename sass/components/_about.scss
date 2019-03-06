@@ -1,6 +1,53 @@
-.about{
+.aboutimmg {
+	display: flex;
+    flex-direction: column;
 
-    &__img{
-        background-color: black;
-    }
+    &__child {
+        flex: 1;
+        margin: 0;
+        position: relative;
+
+@media only screen and (min-width: 580px) {
+	
+        flex:  48%;
+         margin-bottom: 1.5rem;
+		 margin-right: 10px ;
+		margin-left:10px;
+            
+           
+	}
+
+}
+   @media only screen and (min-width: 580px) {
+  
+     	flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 1000px;
+        margin: 0 auto;
+  }
+  
+  	&__btn{
+		display: block;
+  		width: 100%;
+    	text-decoration: none;
+    	padding: 10px 12px;
+    	background: #b4b9be;
+	  	font-size: 16px;
+  		cursor: pointer;
+  		text-align: center;
+}
+
+	&__name{
+		width:100%;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+}
+
+	&__title{
+		width:100%;
+		text-decoration:none;
+		text-align: center;
+}
+
 }
