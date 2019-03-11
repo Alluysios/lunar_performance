@@ -1,12 +1,15 @@
 
 .footer {
     display: flex;
-    background-image: linear-gradient(-45deg, #000080 50%, #333 50%);
+    background-image: linear-gradient(#000080 50%, #333 50%);
     color: #fff !important;
     flex-direction: column;
     padding: 80px 0;
+    padding-left: 40px;
 
     @media (min-width: 768px) {
+        background-image: linear-gradient(-45deg, #000080 50%, #333 50%);
+
         & {
             flex-direction: row;
             justify-content: space-evenly;
@@ -25,22 +28,33 @@
         }
     }
 
+    &__info,
+    &__contact {
+        padding: 1.5rem 0;
+    }
+
     &__info {
-        padding-bottom: 1.5rem;
         order: 2;
     }
 
     &__sm {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
     }
 
     &__contact {
         line-height: 1;
+
+        &-phone,
+        &-email {
+            font-size: 20px;
+        }
     }
 
     
     &__link {
         color: #fff;
+        font-size: 16px;
         text-decoration: none;
     }
 }
