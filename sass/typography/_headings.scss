@@ -3,27 +3,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-secondary {
-	font-size: 200%;
+	font-size: 30px;
+	display: block;
 	text-align: center;
 	text-transform: uppercase;
-	width: 500px;
-	margin: 36px auto;
-	padding-top: 64px;
+	flex: 1 0 100%;
 	position: relative;
 	top: 0;
+	padding-left: 0;
+	
+
+	@media (min-width: 768px) {
+		font-size: 40px;
+		padding-left: 120px;
+		text-align: left;
+	}
+	
 
 	&::before {
 		content: "";
 		position: absolute;
 		bottom: -10%;
-		left: 0;
-		width: 100%;
+		left: 50%;
+		width: 50%;
+		transform: translateX(-50%);
 		height: 3px;
 		background: #000080;
 
 		@media (min-width: 768px) {
+			position: absolute;
 			top: 50%;
-			left: -77%;
+			left: 60px;
 			width: 100px;
 		}
 	}
