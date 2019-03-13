@@ -1,7 +1,4 @@
 .main-navigation {
-	// display: flex;
-	// justify-content: flex-end;
-	// padding: 1rem 2rem;
 
 	ul {
 		display: none;
@@ -32,19 +29,15 @@
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
 		li.focus > ul {
-			left: auto;
+			left: 140px;
+
+			@media screen and (min-width: 800px) {
+				left: 0;
+			}
 		}
 	}
 
@@ -53,24 +46,12 @@
 		position: relative;
 		padding: 1rem;
 		text-transform: uppercase;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-
-	}
-
 
 
 	& .sub-menu {
@@ -120,7 +101,7 @@
 	&__button {
 		align-self: center;
 		margin-left: auto;
-		padding: 10px 15px;
+		padding: 8px 10px;
 		margin-right: 10px;
 		background-color: #333;
 		color: #fff;
@@ -159,7 +140,11 @@
 
 		&__items {
 			flex-direction: row;
-			font-size: 1rem;
+			font-size: 14px;
+
+			@media (min-width: 992px) {
+				font-size: 1rem;
+			}
 		}
 	}
 }
@@ -186,6 +171,11 @@
 }
 
 .custom-logo {
-	width: 250px;
+	width: 200px;
 	height: auto;
+
+	@media screen and (min-width: 768px) {
+		width: 250px;
+		height: auto;
+	}
 }

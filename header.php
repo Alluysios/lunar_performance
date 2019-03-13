@@ -21,7 +21,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-<?php 
+<?php
 echo do_shortcode('[smartslider3 slider=2]');
 ?>
 	<div class="header__content">
