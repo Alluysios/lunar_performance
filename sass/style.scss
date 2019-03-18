@@ -108,7 +108,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "media/media";
 
 /*--------------------------------------------------------------
-# Media
+# Components
 --------------------------------------------------------------*/
 @import "layout/header";
 @import "components/about";
@@ -117,3 +117,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "components/faq";
 @import "components/programs";
 @import "layout/footer";
+
+/*--------------------------------------------------------------
+# Installed Plugins
+--------------------------------------------------------------*/
+@import "components/Iplugins"; 

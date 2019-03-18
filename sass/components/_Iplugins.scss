@@ -1,0 +1,32 @@
+#wpsm_accordion_1000 {
+
+    @media (min-width: 768px) {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    
+    & .ac_title_class {
+        font-size: 16px;
+        font-family: 'Asap' !important;
+
+        @media (min-width: 768px) {
+            font-size: 25px;
+            padding: 20px 25px !important;
+        }
+    }
+
+    & .wpsm_panel-body {
+        line-height: 1.7;
+
+        @media (min-width: 768px) {
+            font-size: 18px !important;
+        }
+    }
+}
+
+.entry-content #wpsm_accordion_1000 .ac_open_cl_icon {
+    @media (min-width: 768px) {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+}
