@@ -8,9 +8,13 @@
     left: 0;
     padding: 15px 0;
     background: #fff;
-    
-    &__title {
 
+    &__branding {
+        flex: 1 0 80%;
+
+        @media (min-width: 800px) {
+            flex: 1;
+        }
     }
 
     &__content {

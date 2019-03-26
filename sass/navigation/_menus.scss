@@ -107,8 +107,11 @@
 		color: #fff;
 	}
 
-	.menu-menu-1-container {
+	.menu-menu-container {
 		flex: 1 0 100%;
+		background: #fff;
+		z-index: 999;
+		@media screen and (min-width: 800px) { flex: none; }
 	}
 
 	&__items {
@@ -171,8 +174,9 @@
 }
 
 .custom-logo {
-	width: 200px;
+	width: 150px;
 	height: auto;
+	margin-left: 3.5rem;
 
 	@media screen and (min-width: 768px) {
 		width: 250px;

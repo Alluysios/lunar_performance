@@ -37,8 +37,6 @@ echo do_shortcode('[smartslider3 slider=2]');
 			<h2 class="header__description site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></h2>
 			<?php
 		endif;
-		$lunar_performance_description = get_bloginfo( 'description', 'display' );
-		if ( $lunar_performance_description || is_customize_preview() ) :
 	?>
 	</div>
 	<header id="masthead" class="header site-header">
@@ -47,7 +45,6 @@ echo do_shortcode('[smartslider3 slider=2]');
 				<?php
 				the_custom_logo();
 				?>
-				<?php endif; ?>
 			</div><!-- .site-branding -->
 			<button class="navigation__button menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i><?php esc_html_e( '', 'lunar_performance' ); ?></button>
 			<?php
