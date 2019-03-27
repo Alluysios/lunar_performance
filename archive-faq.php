@@ -10,12 +10,12 @@ if(get_field('answer')) {
     $answer = get_field('answer');
 }
 ?>
-
 <?php while ( have_posts() ) : the_post(); ?>
 
-        <h2><?php echo $question; ?></h2>
-        <h2><?php echo $answer; ?></h2>
-
+    <button class="accordion"><?php echo $question; ?></button>
+    <div class="panel">
+        <p><?php echo $answer; ?></p>
+    </div>
 <?php endwhile; // End of the loop. ?>
     
 
