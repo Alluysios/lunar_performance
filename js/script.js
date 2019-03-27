@@ -33,3 +33,22 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+function breakFirstWord(word) {
+	var wordSplit = word.split(" ");
+	var newTitle = "";
+	newTitle += wordSplit[0] + " ";
+
+	for(var i = 1; i < wordSplit.length; i++) {
+			newTitle = newTitle + " <span class='break'> " + wordSplit[i];
+	}
+
+	return newTitle + "</span>";
+}
+
+
+// document.querySelector(".tprograms__iteminfo-heading").innerHTML = breakFirstWord(document.querySelector(".tprograms__iteminfo-heading").innerHTML);
+
+document.querySelectorAll(".tprograms__iteminfo-heading").forEach(function(word) {
+	word.innerHTML = breakFirstWord(word.innerText);
+});
