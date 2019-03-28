@@ -6,7 +6,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         max-width: 1300px;
-        margin: 0 auto;
+        margin: 3rem auto 2rem auto;
     }
     
     & figure {
@@ -29,18 +29,14 @@
     &__item {
         flex: 1;
         margin: 0;
+        padding: 0;
         position: relative;
-        height: 500px;
+        height: 350px;
         overflow: hidden;
-
-        &:hover .overlay {
-            opacity: .5;
-        }
-
 
         @media (min-width: 576px) {
             flex: 1 0 48%;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             margin-left: 10px;
             margin-right: 10px;
             height: 800px;
@@ -50,6 +46,11 @@
                 height: 500px;
             }
         }
+
+        &:hover .overlay {
+            opacity: .5;
+        }
+        
         & figure > img {
             height: 100%;
             width: 100%;
