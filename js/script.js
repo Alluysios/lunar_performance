@@ -1,25 +1,4 @@
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function() {
-	/* Toggle between adding and removing the "active" class,
-	to highlight the button that controls the panel */
-	this.classList.toggle("active");
-
-	/* Toggle between hiding and showing the active panel */
-	var panel = this.nextElementSibling;
-	if (panel.style.display === "block") {
-		panel.style.display = "none";
-	} else {
-		panel.style.display = "block";
-	}
-	});
-}
-
-
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("faq__accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -34,6 +13,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
+// adding break after the first word
 function breakFirstWord(word) {
 	var wordSplit = word.split(" ");
 	var newTitle = "";
@@ -45,9 +26,6 @@ function breakFirstWord(word) {
 
 	return newTitle + "</span>";
 }
-
-
-// document.querySelector(".tprograms__iteminfo-heading").innerHTML = breakFirstWord(document.querySelector(".tprograms__iteminfo-heading").innerHTML);
 
 document.querySelectorAll(".tprograms__iteminfo-heading").forEach(function(word) {
 	word.innerHTML = breakFirstWord(word.innerText);

@@ -7,17 +7,15 @@ get_header();?>
     );
     $the_query = new WP_Query($args);
 ?>
-<div class="accordion-container">
+<div class="faq">
     <?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
-    <?php
-        if(get_field('answer')) { $answer = get_field('answer'); }
-    ?>
-    <button class="accordion"><?php the_title(); ?></button>
-    <div class="panel">
-        <p><?php the_content(); ?></p>
-    </div>
+        <?php if(get_field('answer')) { $answer = get_field('answer'); }?>
+        <button class="faq__accordion"><?php the_title(); ?></button>
+        <div class="faq__panel">
+            <p><?php the_content(); ?></p>
+        </div>
+    <?php endwhile; // End of the loop. ?>
+    <?php endif; // end of the the ?>
 </div>
-
-<?php endwhile; // End of the loop. ?>
-<?php endif; // end of the the ?>
 <?php get_footer(); ?> 
+

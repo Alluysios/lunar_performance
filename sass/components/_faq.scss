@@ -1,23 +1,16 @@
-// .faq {
+.faq {
+  width: 90%;
+  margin: 1rem auto;
 
-//     &__heading {
-//         width: 100%;
-//         margin: 0 auto;
-//         font-size: 20px;
-//         padding-bottom: 15px;
-//         text-transform: uppercase;
-
-//         @media (min-width: 768px) {
-//             width: 90%;
-//             font-size: 45px;
-//         }
-//     }
-// }
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
+  @media (min-width: 568px) {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  
+  &__accordion {
+    background-color: #351ebf;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -25,18 +18,34 @@
     border: none;
     outline: none;
     transition: 0.4s;
+
+    @media (min-width: 568px) {
+      font-size: 18px;
+    }
+
+    &::after {
+      content: '\002B';
+      color: #fff;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
   }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  .panel {
+
+  &__panel {
     padding: 0 18px;
     background-color: white;
+    border: 1px solid #351ebf;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+}
 
- 
+.active::after {
+  content: "\2212";
+}
+
+.active, .faq__accordion:hover {
+  background-color: #333;
+}

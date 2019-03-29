@@ -1,12 +1,13 @@
 .contact {
     max-width: 1200px;
     margin: 0 auto !important;
+    padding-bottom: 2rem; 
 
     &__btn {
-        background-color: #351ebf;
+        background-color: #351ebf !important;
+        color: #fff !important;
         padding: 12px 24px;
         text-transform: uppercase;
-        color: #fff;
     }
 
     &__heading {
