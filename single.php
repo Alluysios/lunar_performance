@@ -1,48 +1,33 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The Template for displaying all single posts.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package lunar_performance
+ * @package Underscores.me
+ * @since Underscores.me 1.0
  */
-if(get_field('program_name')) { $program_name = get_field('program_name'); }
-if(get_field('program_description')) { $program_description = get_field('program_description'); } 
-get_header();
-?>
+get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-	
+		<div id="primary" class="site-content">
+			<div id="content" role="main">
 
-		<div class="personalt" id="group-performance">
-			<p class="personalt__title"><?php echo $program_name; ?></p>
-			<div class="personalt__content">
-				<p class="personalt__description"><?php echo $program_description; ?></p>
-			<div class="personalt__btn">
-				<a href="#">Register Now </a>
-			</div>
-		</div>
-		<?php
-		
-		// while ( have_posts() ) :
-		// 	the_post();
+			<?php while ( have_posts() ) : the_post(); ?>
 
-		// 	get_template_part( 'template-parts/content', get_post_type() );
+				<?php underscoresme_content_nav( 'nav-above' ); ?>
 
-		// 	the_post_navigation();
+				<?php get_template_part( 'content', 'single' ); ?>
 
-		// 	// If comments are open or we have at least one comment, load up the comment template.
-		// 	if ( comments_open() || get_comments_number() ) :
-		// 		comments_template();
-		// 	endif;
+				<?php underscoresme_content_nav( 'nav-below' ); ?>
 
-		// endwhile; // End of the loop.
-		?>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || '0' != get_comments_number() )
+						comments_template( '', true );
+				?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			<?php endwhile; // end of the loop. ?>
 
-<?php
-get_sidebar();
-get_footer();
+			</div><!-- #content -->
+		</div><!-- #primary .site-content -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

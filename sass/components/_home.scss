@@ -61,6 +61,16 @@
             transform: scale(1.1);
         }
     }
+    &__allprograms {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+        background-color: #000080;
+        color: #fff;
+        text-decoration: none;
+    }
+    
 
     &__iteminfo {
         position: absolute;

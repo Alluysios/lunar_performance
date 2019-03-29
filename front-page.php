@@ -1,9 +1,34 @@
-<?php get_header(); ?>
+<?php get_header(); 
 
+$args = array(
+  'post_type' => 'program',
+  'posts_per_page' => '4'
+);
+$the_query = new WP_Query($args);
+
+$args2 = array(
+  'post_type' => 'program',
+);
+$num_post = count( get_posts( $args2 ) );
+
+?>
 
 <div class="tprograms" id="tprograms">
-  <h2 class="heading-secondary">Training Programs</h2>
+<?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
 
+<div class="tprograms__item">
+    <div class="overlay"></div>
+    <figure class="wp-block-image">
+    <img src="<?php the_post_thumbnail(); ?>" alt="" class="wp-image-216"></figure>
+    <div class="tprograms__iteminfo">
+        <h3 class="tprograms__iteminfo-heading"><?php the_title(); ?></h3>
+        <p class="tprograms__iteminfo-description"><?php the_excerpt(); ?></p>
+
+        <a href="<?php echo get_permalink(get_the_ID()); ?>" class="tprograms__btn">Learn More → </a>
+    </div>
+</div>
+<!-- <div class="tprograms" id="tprograms">
+  <h2 class="heading-secondary">Training Programs</h2>
   <div class="tprograms__item">
     <div class="overlay"></div>
     <figure class="wp-block-image">
@@ -48,7 +73,13 @@
         <a href="http://lunar.web.dmitcapstone.ca/lunarperformance/team-performance/" class="tprograms__btn">Learn More → 
         </a>
     </div>
-  </div>
+  </div> -->
+
+  <?php endwhile; // End of the loop. ?>
+<?php endif; // end of the the ?>
+  <?php if($num_post > 4): ?>
+    <a href="<?php echo get_site_url(); ?>/program" class="tprograms__allprograms">SEE ALL PROGRAMS</a>
+  <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
