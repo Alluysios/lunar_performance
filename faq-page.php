@@ -12,7 +12,7 @@ get_header();?>
         <?php if(get_field('answer')) { $answer = get_field('answer'); }?>
         <button class="faq__accordion"><?php the_title(); ?></button>
         <div class="faq__panel">
-            <p><?php the_content(); ?></p>
+            <div><?php the_content(); ?></div>
         </div>
     <?php endwhile; // End of the loop. ?>
     <?php endif; // end of the the ?>

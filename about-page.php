@@ -15,13 +15,13 @@ get_header();?>
         <?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
         <?php if(get_field('title')) { $title = get_field('title'); } ?>
         <div class="about__container-author">
-            <p class="about__name heading-tertiary"><?php the_title(); ?></p>
+            <div class="about__name heading-tertiary"><?php the_title(); ?></div>
             <figure class="about__img">
                 <p class="about__title"><?php echo $title; ?></p>
-                <img src=<?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail(); ?>
                 <a class="about__btn" href="<?php echo get_permalink(get_the_ID()); ?>">VIEW DETAIL </a>
             </figure>
-            <p class="about__description"><?php the_excerpt(); ?></p>
+            <div class="about__description"><?php the_excerpt(); ?></div>
             
         </div>
         <?php endwhile; // End of the loop. ?>

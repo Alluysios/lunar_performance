@@ -16,9 +16,9 @@ if(get_field('price_append')) { $price_prepend = get_field('price_prepend'); }
 		<main id="main" class="site-main">
 			<?php while ( have_posts() ) :the_post();?>
 				<div class="personalt">
-					<p class="personalt__title"><?php the_title(); ?></p>
+					<div class="personalt__title"><?php the_title(); ?></div>
 					<div class="personalt__content">
-						<p class="personalt__description"><?php the_content(); ?></p>
+						<div class="personalt__description"><?php the_content(); ?></div>
 						<p class="tprograms__iteminfo-price"><?php echo $price_prepend." Price: $".$price ." ". $price_append; ?></p>
 					<div class="personalt__btn">
 						<a href="http://lunar.web.dmitcapstone.ca/lunarperformance/contact/">Register Now </a>
