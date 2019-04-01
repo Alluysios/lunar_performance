@@ -14,6 +14,8 @@ $num_post = count( get_posts( $args2 ) );
 ?>
 
 <div class="tprograms" id="tprograms">
+<h2 class="heading-secondary">Training Programs</h2>
+
 <?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
 
 <div class="tprograms__item">
