@@ -8,7 +8,7 @@
   }
   
   &__accordion {
-    background-color: #351ebf;
+    background-color: #659897;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -34,8 +34,8 @@
 
   &__panel {
     padding: 0 18px;
-    background-color: white;
-    border: 1px solid #351ebf;
+    background-color: #fff;
+    border: 1px solid #dad516;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -47,5 +47,5 @@
 }
 
 .active, .faq__accordion:hover {
-  background-color: #333;
+  background-color: #dad516;
 }
