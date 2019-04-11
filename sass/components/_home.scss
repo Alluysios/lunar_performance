@@ -31,7 +31,8 @@
         margin: 0;
         padding: 0;
         position: relative;
-        height: 350px;
+        top: 0;
+        left: 0;
         overflow: hidden;
 
         @media (min-width: 576px) {
@@ -74,19 +75,20 @@
 
     &__iteminfo {
         position: absolute;
-        top: 50%;
+        top: 170px;
         left: 20px;
         color: #fff;
-        transform: translateY(-50%);
         z-index: 25;
+
+        & p {
+            margin: 0;
+        }
 
         &-heading {
             font-size: 20px;
-            margin-bottom: 25px;
 
             @media (min-width: 576px) {
                 font-size: 30px;
-                margin-bottom: 25px;
             }
 
             ::last-word {
@@ -112,9 +114,9 @@
 
         &-description {
             padding-top: 0;
-            margin-top: 0;
+            margin: 0;
             font-size: 12px;
-
+            max-width: 530px;
             @media (min-width: 576px) {
                 padding-top: 20px;
                 font-size: 20px;
@@ -131,6 +133,8 @@
         margin-top: 15px;
         display: inline-block;
         background: #659897;
+        position: absolute;
+        top: 350px;
 
         @media (min-width: 768px) {
             margin-top: 40px;

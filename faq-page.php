@@ -1,5 +1,4 @@
 <?php /* Template Name: FAQs Template */
-
 get_header();?>
 <?php 
     $args = array(
@@ -18,4 +17,3 @@ get_header();?>
     <?php endif; // end of the the ?>
 </div>
 <?php get_footer(); ?> 
-

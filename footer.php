@@ -15,8 +15,16 @@
 		<div class="footer__info">
 			<h3 class="heading-tertiary">Social Media.</h3>
 			<div class="footer__sm">
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-instagram"></i>
+				<a href="https://www.facebook.com/lunarperformance/">
+					<img src="<?php echo get_site_url() ?>/wp-content/uploads/2019/04/icons8-facebook-48.png" alt="facebook-icon">
+				</a>
+				<a href="#">
+					<img src="<?php echo get_site_url() ?>/wp-content/uploads/2019/04/icons8-twitter-circled-48.png" alt="twitter-icon">
+				</a>
+				<a href="#">
+					<img src="<?php echo get_site_url() ?>/wp-content/uploads/2019/04/icons8-instagram-48.png" alt="instagram-icon">
+				</a>
+				
 			</div>
 			<a href="<?php echo esc_url( __( 'http://lunar.web.dmitcapstone.ca/lunarperformance/', 'lunar_performance' ) ); ?>" class="footer__link">
 				<?php
