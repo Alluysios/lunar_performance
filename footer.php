@@ -18,10 +18,10 @@
 				<a href="https://www.facebook.com/lunarperformance/">
 					<img src="<?php echo get_site_url() ?>/wp-content/uploads/2019/04/icons8-facebook-48.png" alt="facebook-icon">
 				</a>
-				<a href="#">
+				<a href="https://twitter.com/LunarPerform">
 					<img src="<?php echo get_site_url() ?>/wp-content/uploads/2019/04/icons8-twitter-circled-48.png" alt="twitter-icon">
 				</a>
-				<a href="#">
+				<a href="https://www.instagram.com/lunarperformance/">
 					<img src="<?php echo get_site_url() ?>/wp-content/uploads/2019/04/icons8-instagram-48.png" alt="instagram-icon">
 				</a>
 				

@@ -8,7 +8,7 @@ get_header();?>
     $the_query = new WP_Query($args);
 ?>
 <div class="about">
-    <h2 style="heading-secondary">About Us</h2>
+    <h2 class="heading-secondary">About Us</h2>
 
     <p>The goal of Lunar Performance is to train both athletes &amp; general public to get to their peak mental and physical performance early in their respective sports to prepare them for higher level of competition as well as every day life tasks and activities. We will look to provide the highest quality training to give each and every client the best experience when working with us.</p>
     <div class="about__container">
@@ -27,8 +27,6 @@ get_header();?>
         <?php endwhile; // End of the loop. ?>
         <?php endif; // end of the the ?>
     </div>
-
-
 </div>
 
 <?php get_footer(); ?>

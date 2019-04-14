@@ -6,7 +6,9 @@ get_header();?>
     );
     $the_query = new WP_Query($args);
 ?>
+
 <div class="faq">
+    <h2 class="heading-secondary">Frequently Asked Questions</h2>
     <?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
         <?php if(get_field('answer')) { $answer = get_field('answer'); }?>
         <button class="faq__accordion"><?php the_title(); ?></button>

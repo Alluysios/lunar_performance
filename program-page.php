@@ -7,6 +7,7 @@ $args = array(
 $the_query = new WP_Query($args);
 ?>
 <div class="tprograms" id="tprograms">
+<h2 class="heading-secondary">Training Programs</h2>
 <?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
 <?php
 if(get_field('program_img')) { $program_img = get_field('program_img'); } 
@@ -25,6 +26,6 @@ if(get_field('program_img')) { $program_img = get_field('program_img'); }
     </div>
 </div>
 <?php endwhile; // End of the loop. ?>
-<?php endif; // end of the the ?>
+<?php endif; // end of the the ?>   
 </div>
 <?php get_footer(); ?>
