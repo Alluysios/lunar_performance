@@ -12,12 +12,12 @@
                 </div>
                 <div class="trainer__item">
                     <h3 class="trainer__name heading-tertiary"><?php the_title(); ?></h3>
-                <div class="trainer__description">   
+                    <div class="trainer__description">   
                     <?php echo the_content(); ?>
                     <div class="trainer__btn">
                         <a href="http://lunar.web.dmitcapstone.ca/lunarperformance/about-us/">See Other Trainers</a>
                     </div>
-                </div>
+                    </div>
                 </div>
             </div>
             <?php endwhile; // End of the loop. ?>
