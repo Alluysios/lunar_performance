@@ -17,7 +17,6 @@ get_header();?>
         <div class="about__container-author">
             <div class="about__name heading-tertiary"><?php the_title(); ?></div>
             <figure class="about__img">
-                <p class="about__title"><?php echo $title; ?></p>
                 <?php the_post_thumbnail(); ?>
                 <a class="about__btn" href="<?php echo get_permalink(get_the_ID()); ?>">VIEW DETAIL </a>
             </figure>

@@ -9,7 +9,6 @@
             <div class="trainer__container">
                 <?php the_post_thumbnail(); ?>
                 <h3 class="trainer__name heading-tertiary"><?php the_title(); ?></h3>
-                <?php if($title) { echo "<p class='trainer__title'> $title </p>"; }?>
                 <div class="trainer__description">   
                     <?php echo the_content(); ?>
                     <div class="trainer__btn">
