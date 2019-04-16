@@ -36,8 +36,8 @@
 
 		<div class="footer__contact">
 			<h3 class="heading-tertiary">Contact</h3>
-			<p class="footer__contact-phone">Phone: 587-999-9999</p>
-			<p class="footer__contact-email">Email: lunarperformance@gmail.com</p>
+			<p class="footer__contact-phone">Phone: 780-850-2205</p>
+			<p class="footer__contact-email">Email: meberhardtfitness@gmail.com</p>
 		</div><!-- .contact -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
