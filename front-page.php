@@ -21,7 +21,8 @@ if(get_field('price')) { $price = get_field('price'); }
 <div class="tprograms__item">
     <div class="overlay"></div>
     <figure class="wp-block-image">
-    <img src="<?php the_post_thumbnail() ?>"</figure>
+      <?php the_post_thumbnail(); ?>
+    </figure>
     <div class="tprograms__iteminfo">
         <h3 class="tprograms__iteminfo-heading"><?php the_title(); ?></h3>
         <div class="tprograms__iteminfo-description">

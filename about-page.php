@@ -9,9 +9,10 @@ get_header();?>
 ?>
 <div class="about">
     <h2 class="heading-secondary">About Us</h2>
-
-    <p>The goal of Lunar Performance is to train both athletes &amp; general public to get to their peak mental and physical performance early in their respective sports to prepare them for higher level of competition as well as every day life tasks and activities. We will look to provide the highest quality training to give each and every client the best experience when working with us.</p>
-    <div class="about__container">
+        <div class="about__mission">
+            <p>The goal of Lunar Performance is to train both athletes &amp; general public to get to their peak mental and physical performance early in their respective sports to prepare them for higher level of competition as well as every day life tasks and activities. We will look to provide the highest quality training to give each and every client the best experience when working with us.</p>
+        </div>
+        <div class="about__container">
         <?php if($the_query->have_posts() ) : while ($the_query->have_posts() ) :$the_query->the_post(); ?>
         <?php if(get_field('title')) { $title = get_field('title'); } ?>
         <div class="about__container-author">

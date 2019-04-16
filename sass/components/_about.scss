@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 1rem;
 
+  &__mission {
+    font-size: 1.2rem;
+  }
 
   &__container {
     display: flex;
@@ -10,17 +13,12 @@
     flex-wrap: wrap;
 
     &-author {
-      flex: 1 0 100%;
+      flex-basis: 100%;
       margin-bottom: 1.5rem;
       padding: 0;
 
-      @media only screen and (min-width: 580px) {
-        padding: 1rem;
-      
-      }
-
       @media (min-width: 968px) {
-        flex-basis: 45%;
+        flex-basis: 48%;
       }
     }
   }
@@ -53,7 +51,6 @@
     position: relative;
     bottom: 0;
     width: auto !important;
-    height: 400px !important;
 
     & img {
       width: 100%;
@@ -99,31 +96,25 @@
 .trainer {
   max-width: 1300px;
   margin: 0 auto;
-  @include clearfix();
 
-  &__container {
-    margin: 0;
-    @include clearfix();
-
-    @media only screen and (min-width: 580px) {
-      margin: 2rem 0;
+  &__item{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    flex-direction: column;
+    
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
     }
 
-    & img {
-      // width: auto;
-      height: 400px;
-      margin-right: 12px;
-      margin-top: 0;
-      margin-bottom: 10px;
-      float: left;
+    & figure {
+      flex: 1 0 40%;
 
-      @media only screen and (min-width: 580px) {
-        margin-top: 40px;
-        width: auto;
+      & img { 
+        height: 100%;
       }
     }
   }
-
 
   &__name {
     display: inline-block;
@@ -147,11 +138,12 @@
   }
 
   &__description {
+    flex: 1 0 60%;
     line-height: 1.7;
-    padding: 1rem;
+    padding: 0;
 
     @media only screen and (min-width: 580px) {
-      padding: 0;
+      padding: 12px;
     }
   }
 

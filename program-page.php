@@ -16,11 +16,13 @@ if(get_field('program_img')) { $program_img = get_field('program_img'); }
 <div class="tprograms__item">
     <div class="overlay"></div>
     <figure class="wp-block-image">
-    <img src="<?php the_post_thumbnail(); ?>" alt="" class="wp-image-216"></figure>
+        <?php the_post_thumbnail(); ?>
+    </figure>
     <div class="tprograms__iteminfo">
         <h3 class="tprograms__iteminfo-heading"><?php the_title(); ?></h3>
-        <p class="tprograms__iteminfo-description"><?php the_excerpt(); ?></p>
-
+        <div class="tprograms__iteminfo-description">
+            <?php the_excerpt(); ?>
+        </div>
         <a href="<?php echo get_permalink(get_the_ID()); ?>" class="tprograms__btn">Learn More → 
         </a>
     </div>

@@ -8,16 +8,16 @@
             <?php while ( have_posts() ) :the_post();?>
             <div class="trainer__container">
                 <div class="trainer__item">
+                <figure>
                     <?php the_post_thumbnail(); ?>
-                </div>
-                <div class="trainer__item">
+                </figure>
+                <div class="trainer__description">   
                     <h3 class="trainer__name heading-tertiary"><?php the_title(); ?></h3>
-                    <div class="trainer__description">   
                     <?php echo the_content(); ?>
-                    <div class="trainer__btn">
-                        <a href="http://lunar.web.dmitcapstone.ca/lunarperformance/about-us/">See Other Trainers</a>
-                    </div>
-                    </div>
+                </div>
+                <div class="trainer__btn">
+                    <a href="http://lunar.web.dmitcapstone.ca/lunarperformance/about-us/">See Other Trainers</a>
+                </div>
                 </div>
             </div>
             <?php endwhile; // End of the loop. ?>
