@@ -109,6 +109,7 @@
 
     & figure {
       flex: 1 0 40%;
+      margin: 3em 0;
 
       & img { 
         height: 100%;
@@ -153,6 +154,7 @@
     text-transform: uppercase;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
 
     & > a {
